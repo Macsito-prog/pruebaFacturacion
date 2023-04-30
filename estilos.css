@@ -1,0 +1,28 @@
+.container {
+    margin: .4em;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.datos {
+    display: flex;
+    align-items: center;
+}
+
+.datos label {
+    float: left;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.datos input,
+.datos select {
+    margin-bottom: 10px;
+}
+
+input[name="entero"]{
+    margin-left: 5px;
+}
