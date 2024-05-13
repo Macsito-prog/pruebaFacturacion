@@ -1,5 +1,6 @@
 <?php
 include 'conexion.php';
+include 'datos.php'; // Incluye el archivo donde tienes la función valida_rut
 
 $nombre = $_POST['nombre'];
 $alias = $_POST['alias'];

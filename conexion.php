@@ -3,8 +3,8 @@
 
 $servidor = "localhost";
 $usuario = "root";
-$password = "root";
-$db = "db_votacion";
+$password = "";
+$db = "desis";
 $conexion = mysqli_connect($servidor,$usuario,$password,$db) or die(mysqli_error($conexion));
 
 

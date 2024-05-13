@@ -25,7 +25,7 @@
       </div>
       <div class="datos">
         <label for="">RUT</label>
-        <input type="text" name="rut" id="rut" required>
+        <input type="text" name="rut" id="rut" required >
       </div>
       <div class="datos">
         <label for="">Email</label>
@@ -51,7 +51,6 @@
           endforeach
           ?>
         </select>
-        <p>Valor seleccionado <?php echo $id_region ?></p>
       </div>
       <div class="datos">
         <label for="">Comuna</label>
@@ -62,7 +61,7 @@
       </div>
       <div class="datos">
         <label for="">Candidato</label>
-        <select name="candidato" id="candidato">
+        <select name="candidato" id="candidato" required>
           <option value="0">Seleccione una opción</option>
           <?php
           $consulta_candidato = "Select * from candidato";
