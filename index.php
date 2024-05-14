@@ -25,11 +25,11 @@
       </div>
       <div class="datos">
         <label for="">RUT</label>
-        <input type="text" name="rut" id="rut" required >
+        <input type="text" name="rut" id="rut" required onblur=validarRut() >
       </div>
       <div class="datos">
         <label for="">Email</label>
-        <input type="email" name="email" id="email" required>
+        <input type="email" name="email" id="email" required onblur=validarEmail()>
       </div>
       <div class="datos">
         <label for="">Región</label>
@@ -42,11 +42,11 @@
           ?>
           <?php
           foreach($ejecutar as $opc):
-            $id_region = $opc['id_region'];
-            $nombre_region = $opc['nombre_region'];
+            $region_id = $opc['region_id'];
+            $region_nombre = $opc['region_nombre'];
 
           ?>
-            <option value="<?php echo $id_region ?>"><?php echo $nombre_region ?></option>
+            <option value="<?php echo $region_id ?>"><?php echo $region_nombre ?></option>
           <?php
           endforeach
           ?>

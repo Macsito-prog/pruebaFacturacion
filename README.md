@@ -20,7 +20,7 @@ manos a la obra en el menor tiempo posible.
 
 3.- dentro de phpmyadmin, importar el archivo .sql
 
-4.- abrir localhost/`nombreArchivo.php` en este caso sería localhost/pruebaFacturacion/index.php
+4.- abrir localhost/`nombreArchivo.php`
 
 Y listo! Con esos pasos ya estaría listo y operativo el programa.
 

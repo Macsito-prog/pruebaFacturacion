@@ -1,15 +1,18 @@
 <?php
 include 'conexion.php';
 
-$id_region = filter_input(INPUT_POST, 'region');
+$region_id = filter_input(INPUT_POST, 'region');
 
 
-$consulta = "select * from comunas where id_region = {$id_region}";
+$consulta = "SELECT c.comuna_id, c.comuna_nombre from comunas c inner join provincias p on c.provincia_id = p.provincia_id inner join regiones r on p.region_id = r.region_id
+where r.region_id = {$region_id}
+";
+
 $ejecutar = mysqli_query($conexion, $consulta) or die(mysqli_error($conexion));
 
 while($row = mysqli_fetch_array($ejecutar))
     
-    echo '<option value="'.$row['id_comuna'].'">'.$row['nombre_comuna'].'</option>';
+    echo '<option value="'.$row['comuna_id'].'">'.$row['comuna_nombre'].'</option>';
 
 
  function valida_rut($rut)

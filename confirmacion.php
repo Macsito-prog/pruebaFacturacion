@@ -15,7 +15,7 @@ if($mensaje != '') {
     echo $mensaje;
 }
 
-header("Refresh: 7; url=index.php");
+header("Refresh: 5; url=index.php");
 ?>
 </h1>
 </body>
